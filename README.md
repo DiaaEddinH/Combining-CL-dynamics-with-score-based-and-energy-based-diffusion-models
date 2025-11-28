@@ -13,7 +13,7 @@ This repository contains the workflow and data used in [Combining complex Langev
 1. Set an environment with the above requirements
 2. Clone repository and `cd` to it:
 ```gitbash
-git clone https://github.com/DiaaEddinH/Combining-CL-dynamics-with-score-based-and-energy-based-diffusion-models.git
+git clone --recurse-submodules https://github.com/DiaaEddinH/Combining-CL-dynamics-with-score-based-and-energy-based-diffusion-models.git
 
 ```
 
