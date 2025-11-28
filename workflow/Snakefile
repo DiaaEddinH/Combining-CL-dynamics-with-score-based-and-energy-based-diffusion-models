@@ -1,8 +1,7 @@
 # Main Snakefile
 
-# Load config from command line --config EXPERIMENT_BASE=...
-EXPERIMENT_BASE = config["EXPERIMENT_BASE"]
-EXPERIMENT = EXPERIMENT_BASE[:6]
+# Load config from command line --config EXPERIMENT=...
+EXPERIMENT = config["EXPERIMENT"]
 
 MODEL=["SBM", "EBM"]
 
