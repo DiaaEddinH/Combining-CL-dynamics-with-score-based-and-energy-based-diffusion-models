@@ -1,0 +1,41 @@
+text.usetex : True
+
+font.family : serif
+font.serif : Times New Roman
+font.size : 20
+
+lines.linewidth : 0.5
+lines.markersize : 3
+lines.markeredgewidth : 0.5
+
+errorbar.capsize : 1.5
+markers.fillstyle : none
+
+axes.linewidth : 0.5
+
+legend.fontsize : small
+legend.handletextpad : 0.3
+
+xtick.direction : in
+ytick.direction : in
+xtick.top : True
+
+xtick.major.size : 6
+ytick.major.size : 6
+xtick.major.width : 1
+ytick.major.width : 1
+
+xtick.minor.visible : True
+ytick.minor.visible : True
+xtick.minor.size : 3
+ytick.minor.size : 3
+xtick.minor.width : 1
+ytick.minor.width : 1
+
+xtick.labelsize : 20
+ytick.labelsize : 20
+
+axes.prop_cycle : cycler('color', ['blue', 'red', 'green', 'yellow', 'cyan', 'purple', 'gray'])
+
+
+image.cmap : viridis

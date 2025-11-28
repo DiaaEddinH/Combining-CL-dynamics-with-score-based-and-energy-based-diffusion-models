@@ -1,0 +1,28 @@
+# Main Snakefile
+
+# Load config from command line --config EXPERIMENT_BASE=...
+EXPERIMENT_BASE = config["EXPERIMENT_BASE"]
+EXPERIMENT = EXPERIMENT_BASE[:6]
+
+MODEL=["SBM", "EBM"]
+
+OBS = ["cumulants", "moments"]
+
+# Include modular rules
+include: "rules/compute.smk"
+include: "rules/aggregate.smk"
+include: "rules/tables.smk"
+include: "rules/plots.smk"
+
+
+
+rule all:
+	input:
+		expand("data/processed/{experiment}_{model}_{obs}_random_effects.npz",
+			experiment=EXPERIMENT, obs=OBS, model=["SBM", "EBM", "EBMMH"]
+		),
+		expand("assets/tables/{experiment}_{obs}.tex", experiment=EXPERIMENT, obs=OBS),
+		"assets/plots/complex_langevin_drift.pdf",
+		"assets/plots/gaussian_double_peak_drift.pdf",
+		ALL_PLOTS
+		# expand("assets/plots/{experiment}_{model}_{kind}.pdf", experiment=EXPERIMENT, model=MODEL[:2], kind=PLOTS)

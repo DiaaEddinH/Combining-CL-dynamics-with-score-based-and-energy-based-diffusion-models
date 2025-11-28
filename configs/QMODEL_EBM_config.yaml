@@ -1,0 +1,22 @@
+file: "QMODEL_EBM"
+ddp: false
+device: gpu
+
+lr: 0.001
+max_epochs: 300
+batch_size: 10240
+num_workers: 0
+
+# NETWORK PARAMETERS
+in_channels: 2
+hidden_channels: [64, 64]
+time_channels: 256
+activation: silu
+sigma_min: 1
+sigma_max: 10
+dropout: 0.0
+patience: 100
+
+# SAMPLE GENERATION PARAMETERS
+sample_size: 500000
+time_steps: 1000

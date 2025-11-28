@@ -1,0 +1,20 @@
+file: "GMODEL_EBMMH"
+ddp: false
+device: gpu
+
+lr: 0.0001
+max_epochs: 300
+batch_size: 1024
+num_workers: 0
+
+# NETWORK PARAMETERS
+in_channels: 2
+hidden_channels: [32, 32]
+time_channels: 256
+activation: silu
+sigma_min: 1
+sigma_max: 10
+
+# SAMPLE GENERATION PARAMETERS
+sample_size: 500000
+time_steps: 1000

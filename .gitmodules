@@ -1,0 +1,4 @@
+[submodule "libs/DiffusionModels"]
+	path = libs/DiffusionModels
+	url = https://github.com/DiaaEddinH/DiffusionModels.git
+	branch = version2

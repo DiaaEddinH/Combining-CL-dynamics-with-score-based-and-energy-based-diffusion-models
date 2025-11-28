@@ -1,0 +1,11 @@
+name: score_energy
+channels:
+  - conda-forge
+dependencies:
+  - pip=24.2
+  - python=3.11
+  - pip:
+    - -e ../../libs/DiffusionModels
+    - matplotlib==3.9.2
+    - pandas==2.2.3
+    - format-multiple-errors

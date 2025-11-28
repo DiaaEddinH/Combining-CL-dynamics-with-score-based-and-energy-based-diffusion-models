@@ -1,0 +1,32 @@
+# Common temporary files
+thumbs.db
+.DS_Store
+
+# Python compiled objects
+*.pyc
+__pycache__/
+.mypy_cache/
+
+# Snakemake cache
+.snakemake/
+
+# Workflow outputs
+assets/*
+processed/*
+
+# Workflow inputs that should not be held together with code
+raw/*
+metadata/*
+samples/
+weights
+
+# Common editor temporary files
+*~
+.#*#
+.vscode
+
+# Ignore notebooks
+*.ipynb
+
+# Don't ignore .gitkeep
+!*/.gitkeep
