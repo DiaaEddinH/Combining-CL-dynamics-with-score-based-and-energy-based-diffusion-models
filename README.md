@@ -25,7 +25,11 @@ pip install -e libs/DiffusionModels
 
 4. Unzip data files `samples.zip` & `weights.zip` from Zenodo and place them in `data` directory.
 
-Alternatively, you may unzip the `Archive.zip` file from Zenodo and run steps 2-4.
+Alternatively, you may unzip the `Archive.zip` file from and run steps 2-4.
+
+The data and workflow can be found in 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17725665.svg)](https://doi.org/10.5281/zenodo.17725665)
 
 Assets used by the publication are obtained by running snakemake:
 
